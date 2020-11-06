@@ -1,4 +1,16 @@
-span:hover {
-  background: yellow;
-  cursor: pointer;
+#fullTxt{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: justify;
+  transition: all 500ms;
+}
+.translationLens {
+  position: absolute;
+  border-radius: 15px;
+  transition: all 500ms;
+  border: solid 1px black;
+  background-color: white;
+  padding: 2%;
+  text-align: center;
 }
