@@ -14,3 +14,51 @@
   padding: 2%;
   text-align: center;
 }
+/** Book **/
+
+.bookItem {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: solid 1px #dadada;
+  border-radius: 20px;
+  position: relative;
+}
+
+.bookCover{
+  width: 100%;
+  height: 450px;
+}
+
+.bookTitle {
+  font-size: 18px;
+  color: black;
+}
+
+.bookAuthor {
+  font-size: 15px;
+  color: #404040;
+}
+
+.bookLens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.80);
+  padding: 5%;
+}
+
+p.featureTitle {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p.featureValue {
+  font-size: 15px;
+  font-weight: bold;
+}

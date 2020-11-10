@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Hannibal",
+        "Page_No":"591",
+        "Author": "Thomas Harris",
+        "Genres": "Novel, Suspense, Thriller, Horror fiction, Gothic fiction, Fantasy Fiction, Psychological Fiction",
+        "Publish_date": "June 8, 1999",
+        "Description": "Hannibal is a novel by American author Thomas Harris, published in 1999. It is the third in his series featuring Dr. Hannibal Lecter and the second to feature FBI Special Agent Clarice Starling.",
+        "Cover" : "9781448183739.jpg"
+    },
+    {
+        "title":"Chocolat",
+        "Page_No":"394",
+        "Author":"Joanne Harris",
+        "Genres":"Novel, Magical Realism, Fantasy Fiction, Psychological Fiction",
+        "Publish_date":"March 4, 1999",
+        "Description":"Chocolat is a 1999 novel by Joanne Harris. It tells the story of Vianne Rocher, a young single mother, who arrives in the French village of Lansquenet-sous-Tannes at the beginning of Lent with her six-year-old daughter, Anouk.",
+        "Cover":"chocolate.jpeg"
+    },
+    {
+        "title":"Wholeness and the Implicate Order",
+        "Page_No":"308",
+        "Author":"David Bohm",
+        "Genres":"Science, Quantum mind",
+        "Publish_date":"1980",
+        "Description":"Wholeness and the Implicate Order is a book by theoretical physicist David Bohm. It was originally published in 1980 by Routledge, Great Britain.",
+        "Cover":"wholness.jpg"
+    },
+    {
+        "title":"The Amber Spyglass",
+        "Page_No":"561",
+        "Author":"Philip Pullman",
+        "Genres":"Novel, Children litriture, Fantasy Fiction",
+        "Publish_date":"October 10, 2000",
+        "Description":"The Amber Spyglass is the third novel in the His Dark Materials trilogy, written by English author Philip Pullman. Published in 2000, it won the 2001 Whitbread Book of the Year award, the first children's novel to do so.",
+        "Cover":"81SDpBrAiIL.jpg"
+    },
+    {
+        "title":"Feed",
+        "Page_No":"311",
+        "Author":"Matthew Tobin Anderson",
+        "Genres":"Novel, Young adult fiction, Science Fiction, Dystopian Fiction",
+        "Publish_date":"2002",
+        "Description":"Feed is a young adult dystopian novel of the cyberpunk subgenre written by M. T. Anderson. The novel focuses on issues such as corporate power, consumerism, information technology, data mining, and environmental decay, with a sometimes sardonic, sometimes somber tone.",
+        "Cover":"feed.jpg"
+    },
+    {
+        "title":"The Selfish Gene",
+        "Page_No":"386",
+        "Author":"Richard Dawkins",
+        "Genres":"Popular science",
+        "Publish_date":"1976",
+        "Description":"The Selfish Gene is a 1976 book on evolution by the biologist Richard Dawkins, in which the author builds upon the principal theory of George C. Williams's Adaptation and Natural Selection.",
+        "Cover":"selfish.jpg"
+    },
+    {
+        "title":"The Audacity of Hope: Thoughts on Reclaiming the American Dream",
+        "Page_No":"362",
+        "Author":"Barack Obama",
+        "Genres":"Biography",
+        "Publish_date":"September 25, 2006",
+        "Description":"The Audacity of Hope: Thoughts on Reclaiming the American Dream is the second book written by then-Senator Barack Obama. It became number one on both the New York Times and Amazon.com bestsellers lists in the fall of 2006, after Obama had been endorsed by Oprah Winfrey.",
+        "Cover":"obama.jpg"
+    },
+    {
+        "title":"The Little Stranger",
+        "Page_No":"482",
+        "Author":"Sarah Waters",
+        "Genres":"Novel, Ghost story, Horror fiction",
+        "Publish_date":"2009",
+        "Description":"The Little Stranger is a 2009 gothic novel written by Sarah Waters. It is a ghost story set in a dilapidated mansion in Warwickshire, England in the 1940s.",
+        "Cover":"the-little-stranger-2.jpg"
+    },
+    {
+        "title":"The Testaments",
+        "Page_No":"448",
+        "Author":"Margaret Atwood",
+        "Genres":"Science Fiction, Dystopian Fiction",
+        "Publish_date":"September 10, 2019",
+        "Description":"The Testaments is a 2019 novel by Margaret Atwood. It is a sequel to The Handmaid's Tale. The novel is set 15 years after the events of The Handmaid's Tale. It is narrated by Aunt Lydia, a character from the previous novel; Agnes, a young woman living in Gilead; and Daisy, a young woman living in Canada.",
+        "Cover":"The_Testaments_(Atwood_novel).png"
+    }
+]
