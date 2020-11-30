@@ -62,3 +62,36 @@ p.featureValue {
   font-size: 15px;
   font-weight: bold;
 }
+
+/****    Triage Doc Page     *****/
+
+.figImg {
+  width: 80%;
+}
+
+#mainContent {
+  transition: all 500ms;
+}
+
+#triageLens {
+  width: 80%;
+  position: fixed;
+  height: 80vh;
+  top: 100px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 25px;
+  background-color: rgba(255,255,255,.45);
+  overflow: scroll;
+}
+
+p.lensOption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 500ms;
+  font-size: 20px;
+}
+
+/****    Triage Doc Page     *****/
