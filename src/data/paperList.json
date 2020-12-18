@@ -1,0 +1,73 @@
+[
+    {
+        "id":"1",
+        "title":"I know what you are reading – Recognition of Document Types Using Mobile Eye Tracking",
+        "authors":[
+            {
+                "name":"Kai Kunze"
+            },
+            {
+                "name":"Yuzuko Utsumi"
+            },
+            {
+                "name":"Yuki Shiga"
+            },
+            {
+                "name":"Koichi Kise"
+            }
+        ],
+        "publish_year":"2013",
+        "abstract":"Reading is a ubiquitous activity that many people even perform in transit, such as while on the bus or while walking. Tracking reading enables us to gain more insights about expertise level and potential knowledge of users – towards a reading log tracking and improve knowledge acquisition. As a first step towards this vision, in this work we investigate whether different document types can be automatically detected from visual behaviour recorded using a mobile eye tracker. We present an initial recognition approach that combines special purpose eye movement features as well as machine learning for document type detection. We evaluate our approach in a user study with eight participants and five Japanese document types and achieve a recognition performance of 74% using user-independent training."
+    },
+    {
+        "id":"2",
+        "title":"Activity put in context: Identifying implicit task context within the user’s document interaction",
+        "authors":[
+            {
+                "name":"Karl Gyllstrom"
+            },
+            {
+                "name":"Craig Soules"
+            },
+            {
+                "name":"Alistair Veitch"
+            }
+        ],
+        "publish_year":"2018",
+        "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
+    },
+    {
+        "id":"2",
+        "title":"Activity put in context: Identifying implicit task context within the user’s document interaction",
+        "authors":[
+            {
+                "name":"Karl Gyllstrom"
+            },
+            {
+                "name":"Craig Soules"
+            },
+            {
+                "name":"Alistair Veitch"
+            }
+        ],
+        "publish_year":"2018",
+        "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
+    }
+,
+    {
+        "id":"2",
+        "title":"Activity put in context: Identifying implicit task context within the user’s document interaction",
+        "authors":[
+            {
+                "name":"Karl Gyllstrom"
+            },
+            {
+                "name":"Craig Soules"
+            },
+            {
+                "name":"Alistair Veitch"
+            }
+        ],
+        "publish_year":"2018",
+        "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
+    }]
