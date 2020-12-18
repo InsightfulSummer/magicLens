@@ -3,12 +3,13 @@ import {
     MDBIcon
 } from 'mdbreact'
 import paper1 from '../data/paper.json'
+import paper3 from '../data/paper2.json'
 import {animateScroll as scroll, Element} from 'react-scroll'
 
 
 const RapidLens = ({ cursorPosition, activePaper }) => {
 
-    const [elements, setElements] = useState(paper1)
+    const [elements, setElements] = useState([])
     const [rapidDuration, setDuration] = useState(10)
     const [supRate, setSupRate] = useState(0)
 
@@ -25,6 +26,17 @@ const RapidLens = ({ cursorPosition, activePaper }) => {
         })
     }
 
+    useEffect(() =>{
+        console.log(activePaper)
+        if (activePaper == 1) {
+            setElements(paper1)
+        } else if(activePaper == 2) {
+            setElements([])
+        } else if(activePaper == 3) {
+            setElements(paper3)
+        }
+    } , [activePaper])
+
     return (
         <Element
             className="rapidLens"
@@ -36,7 +48,7 @@ const RapidLens = ({ cursorPosition, activePaper }) => {
                 activePaper == -1 ? (
                     // icon
                     <MDBIcon icon="eye" className="eyeIcon" />
-                ) : activePaper == 1 ? (
+                ) : activePaper? (
                     <div>
                         <div className="my-5">
                             <label htmlFor="customRange1">Rapid View Duration : {rapidDuration} s</label>

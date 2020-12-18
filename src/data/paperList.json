@@ -37,37 +37,13 @@
         "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
     },
     {
-        "id":"2",
-        "title":"Activity put in context: Identifying implicit task context within the user’s document interaction",
+        "id":"3",
+        "title":"Clustering — What Both Theoreticians and Practitioners are Doing Wrong",
         "authors":[
             {
-                "name":"Karl Gyllstrom"
-            },
-            {
-                "name":"Craig Soules"
-            },
-            {
-                "name":"Alistair Veitch"
+                "name":"Shai Ben-David"
             }
         ],
         "publish_year":"2018",
-        "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
-    }
-,
-    {
-        "id":"2",
-        "title":"Activity put in context: Identifying implicit task context within the user’s document interaction",
-        "authors":[
-            {
-                "name":"Karl Gyllstrom"
-            },
-            {
-                "name":"Craig Soules"
-            },
-            {
-                "name":"Alistair Veitch"
-            }
-        ],
-        "publish_year":"2018",
-        "abstract":"Modern desktop search is ill-fitted to our personal document workspace. On one hand, many of the methods which render web search effective cannot be applied on the desktop. On the other, desktop search does not take full advantage of attributes that are unique to our personal documents. In this work, we present Con- fluence, a desktop search system that addresses this problem by capturing the task context within which a user interacts with their documents. This context is then integrated with traditional desktop search techniques to enable task-based document retrieval. Building upon Connections, a system that identifies task context by passively monitoring the user’s interaction with their documents within the file system, Confluence also traces user activity within the user interface and incorporates methods to analyze and integrate this new stream of information. We show that this approach signif- icantly improves the accuracy of task identification, achieving 25% to 30% better recall."
+        "abstract":"Unsupervised learning is widely recognized as one of the most important challenges facing machine learning nowadays.However, in spite of hundreds of papers on the topic being published every year, current theoretical understanding and practical implementations of such tasks, in particular of clustering, is very rudimentary."
     }]
