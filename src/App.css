@@ -149,7 +149,6 @@ p.paperAbstract {
   transition: all 500ms;
   z-index: 5;
   text-align: center;
-  padding: 1%;
 }
 
 .paperItem:hover ~ .rapidLens{
@@ -159,7 +158,6 @@ p.paperAbstract {
   left: 50% !important;
   border-radius: 10px;
   border: solid 1px black;
-  overflow-y: auto;
   background: rgba(255, 255, 255, .75);
 }
 
@@ -170,8 +168,17 @@ p.paperAbstract {
   left: 50% !important;
   border-radius: 10px;
   border: solid 1px black;
-  overflow-y: auto;
   background: rgba(255, 255, 255, .75);
+}
+
+.lensContent {
+  position: absolute;
+  width: 100%;
+  height : 86%;
+  padding: 1%;
+  overflow-y: auto;
+  margin-top: 12%;
+  /* background-color: red; */
 }
 
 .eyeIcon {
@@ -198,4 +205,24 @@ p.paperAbstract {
 
 .elementContainer {
   transition: all 500ms;
+}
+
+.lensControlSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 12%;
+  border-bottom: solid 1px rgb(80, 80, 80);
+  background-color: rgba(0,0,0,.35);
+}
+
+.custom-range {
+  width: 80%;
+}
+
+.playIcon {
+  text-align: center;
+  font-size: 35px;
+  cursor: pointer;
+  color: #2e3951;
 }
