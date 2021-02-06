@@ -113,12 +113,58 @@ p.lensOption {
 }
 
 .paperItem {
-  padding: 1%;
-  border: solid 1px #ececec;
+  padding: 1.5%;
+  border: solid 1.5px #ececec;
   box-shadow: 3px 3px #d2d2d2;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 8px;
   transition: all 500ms;
+}
+
+.paperSmallItem {
+  width: 95%;
+  aspect-ratio: 1/1.5;
+  border: solid 1.5px #ececec;
+  box-shadow: 3px 3px #d2d2d2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 2.5%;
+  position: relative;
+}
+
+@media (max-width:576px) {
+  .col-sm-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+.smallItemTitle {
+  font-weight: 500;
+  text-align: center;
+  font-size: .75em;
+  color: #404040;
+  border-bottom: solid 0.2px #e0e0e0;
+  padding: 1.2%;
+  line-height: 1.8;
+}
+
+.smallItemAuthors {
+  text-align: center;
+  color: #5f4f46;
+  font-weight: 200;
+  font-size: 0.75em;
+  margin: 5%;
+}
+
+.smallItemPublishYear {
+  position: absolute;
+  bottom: 0;
+  background: #3f51b5;
+  color: white;
+  padding: 1px 10px;
+  font-size: 0.9em;
 }
 
 h5.paperTitle {
@@ -225,4 +271,77 @@ p.paperAbstract {
   font-size: 35px;
   cursor: pointer;
   color: #2e3951;
+}
+
+/***************************************************************************/
+.changeViewIcon {
+  font-size: 20px;
+  color: #afafaf;
+  margin-right: 15px;
+  margin-top: 25px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.activeView {
+  color: #3f51b5;
+  font-size: 25px;
+}
+
+.groupingIcon {
+  color: #afafaf;
+  font-size: 25px;
+  transition: all 200ms;
+  margin-top: 25px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.activeGrouping {
+  color: #3f51b5;
+  font-size: 28px;
+}
+
+.groupsContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 3%;
+  background: aliceblue;
+  border-radius: 8px;
+  box-shadow: 3px 3px #d1ddff;
+}
+
+.groupContainer {
+  position: relative;
+  width: 100%;
+}
+
+.groupCell {
+  border: solid 0.3px #ababab;
+    width: 100%;
+    aspect-ratio: 1/1.5;
+    border-radius: 8px;
+}
+
+.addAnotherG {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  border: solid 1px #3f51b5;
+  border-radius: 8px;
+  text-align: center;
+  color: #3f51b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.removeGroupIcon {
+  position: absolute;
+  cursor: pointer;
+  color: #900000;
+  font-size: 35px;
+  top: -15px;
+  right: -15px;
 }
