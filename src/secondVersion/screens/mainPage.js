@@ -3,12 +3,17 @@ import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBAnimation } from 'mdbreact'
 import MainNavBar from '../components/mainNavBar';
 import LargeItem from '../components/paperItems/largeItem';
 import SmallItem from '../components/paperItems/smallItem';
-import Groups from '../components/groups';
+import Groups from '../components/clustering/groups';
+import PaperList from '../sampleData/sampleListOfDocuments.json'
 
 const MainPage = () => {
 
     const [activeView, setActiveView] = useState("list")
     const [activeGrouping, toggleActiveGrouping] = useState(false)
+    const [papers, setPapers] = useState(PaperList);
+
+    let d = 0;
+    let d2 = 0;
 
     return (
         <div>
@@ -54,39 +59,38 @@ const MainPage = () => {
 
 
                     {
-                        activeView == "list" ? (
-                            <div>
-                                <LargeItem delay="0ms" />
-                                <LargeItem delay="200ms" />
-                                <LargeItem delay="400ms" />
-                                <LargeItem delay="600ms" />
-                                <LargeItem delay="800ms" />
-                                <LargeItem delay="1000ms" />
-                                <LargeItem delay="1200ms" />
-                            </div>
-                        ) : (
+                        activeView == "list" ?
+                            papers.map(doc => {
+                                d += 200
+                                return (
+                                    <LargeItem
+                                        title={doc.title}
+                                        publishYear={doc.publishYear}
+                                        authors={doc.authors}
+                                        abstract={doc.abstract}
+                                        id={doc._id}
+                                        delay={d+"ms"}
+                                    />
+                                )
+                            })
+                            : (
                                 <MDBRow>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="0ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="200ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="400ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="600ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="800ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="1000ms" />
-                                    </MDBCol>
-                                    <MDBCol sm="6" md="3" lg="2" >
-                                        <SmallItem delay="1200ms" />
-                                    </MDBCol>
+                                    {
+                                        papers.map(doc => {
+                                            d2 += 200
+                                            return (
+                                                <MDBCol sm="6" md="3" lg="2" >
+                                                    <SmallItem 
+                                                        title={doc.title}
+                                                        publishYear={doc.publishYear}
+                                                        authors={doc.authors}
+                                                        id={doc._id}
+                                                        delay={d2+"ms"}
+                                                    />
+                                                </MDBCol>
+                                            )
+                                        })
+                                    }
                                 </MDBRow>
                             )
                     }
