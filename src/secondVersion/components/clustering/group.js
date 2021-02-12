@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import {
     MDBAnimation, MDBIcon
-} from 'mdbreact'
+} from 'mdbreact';
+import documentList from '../../sampleData/sampleListOfDocuments.json';
 
 const Group = ({last, remove}) => {
 
@@ -11,6 +12,14 @@ const Group = ({last, remove}) => {
     const dropComplete = (e) => {
         toggleDropping(false);
         let _id = e.dataTransfer.getData("_id");
+        let matchId = documents.find(doc => {return doc._id == _id})
+        if(matchId == undefined){
+            let documentItem = documentList.find(doc => {return doc._id == _id})
+            let tmp = [...documents, documentItem]
+            setDocuments(tmp)
+            console.log(documents)
+        }
+
         // firstly check if a document with the same id is in the group or not ...
         // if not, add the document to the list of documents of this group ...
         // based on the number of documents in the group the grid system of the table should change ...
