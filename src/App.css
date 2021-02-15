@@ -316,6 +316,19 @@ p.paperAbstract {
   position: relative;
   width: 100%;
   transition: all 500ms;
+  aspect-ratio: 1/1.5;
+  border-radius: 8px;
+  border: solid 1px #3f51b5;
+  padding: 2px;
+}
+
+.groupContainer .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.groupContainer .col{
+  padding: 0
 }
 
 .groupCell {
@@ -323,6 +336,7 @@ p.paperAbstract {
     width: 100%;
     aspect-ratio: 1/1.5;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .addAnotherG {
@@ -345,4 +359,13 @@ p.paperAbstract {
   font-size: 35px;
   top: -15px;
   right: -15px;
+}
+
+.clearGroup {
+  position: absolute;
+  cursor: pointer;
+  color: #900000;
+  font-size: 35px;
+  bottom: -15px;
+  left: -15px;
 }

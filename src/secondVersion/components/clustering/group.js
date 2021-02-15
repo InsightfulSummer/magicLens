@@ -1,63 +1,132 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import {
-    MDBAnimation, MDBIcon
+    MDBAnimation, MDBCol, MDBIcon, MDBRow
 } from 'mdbreact';
 import documentList from '../../sampleData/sampleListOfDocuments.json';
+import GroupItem from '../paperItems/groupItem'
 
-const Group = ({last, remove}) => {
+const Group = ({ last, remove }) => {
 
-    const [dropping , toggleDropping] = useState(false)
-    const [documents , setDocuments] = useState([])
+    const [dropping, toggleDropping] = useState(false)
+    const [documents, setDocuments] = useState([])
 
     const dropComplete = (e) => {
         toggleDropping(false);
         let _id = e.dataTransfer.getData("_id");
-        let matchId = documents.find(doc => {return doc._id == _id})
-        if(matchId == undefined){
-            let documentItem = documentList.find(doc => {return doc._id == _id})
+        let matchId = documents.find(doc => { return doc._id == _id })
+        if (matchId == undefined) {
+            let documentItem = documentList.find(doc => { return doc._id == _id })
             let tmp = [...documents, documentItem]
             setDocuments(tmp)
             console.log(documents)
         }
+    }
 
-        // firstly check if a document with the same id is in the group or not ...
-        // if not, add the document to the list of documents of this group ...
-        // based on the number of documents in the group the grid system of the table should change ...
-        // we should use a presentation close to small Item to show the relevant document ...
+    const renderCells = () => {
+        let docNum = documents.length
+        if (docNum < 4) {
+            return (
+                <div>
+                    <MDBRow>
+                        <MDBCol>
+                            <div className="groupCell">
+                                {
+                                    documents.length > 0 ? (
+                                        <GroupItem
+                                            title={documents[0].title}
+                                            publishYear={documents[0].publishYear}
+                                        />
+                                    ) : null
+                                }
+                            </div>
+                        </MDBCol>
+                        <MDBCol>
+                            <div className="groupCell">
+                                {
+                                    documents.length > 1 ? (
+                                        <GroupItem
+                                            title={documents[1].title}
+                                            publishYear={documents[1].publishYear}
+                                        />
+                                    ) : null
+                                }
+                            </div>
+                        </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                        <MDBCol>
+                            <div className="groupCell">
+                                {
+                                    documents.length > 2 ? (
+                                        <GroupItem
+                                            title={documents[2].title}
+                                            publishYear={documents[2].publishYear}
+                                        />
+                                    ) : null
+                                }
+                            </div>
+                        </MDBCol>
+                        <MDBCol>
+                            <div className="groupCell"></div>
+                        </MDBCol>
+                    </MDBRow>
+                </div>
+            )
+        } else {
+            let numRows = Math.floor(Math.sqrt(docNum))
+            let numCols = Math.ceil(docNum / numRows)
+            let emptyArray = Array(numRows).fill(0)
+            return (
+                <div>
+                    {
+                        emptyArray.map((a, i) => (
+                            <MDBRow>
+                                {
+                                    documents.slice(i * numCols, (i + 1) * numCols).map(doc => {
+                                        console.log(doc)
+                                        return (
+                                            <MDBCol>
+                                                <div className="groupCell">
+                                                    <GroupItem 
+                                                        title={doc.title}
+                                                        publishYear={doc.publishYear}
+                                                    />
+                                                </div>
+                                            </MDBCol>
+                                        )
+                                    })
+                                }
+                            </MDBRow>
+                        ))
+                    }
+                </div>
+            )
+        }
     }
 
     return (
         <MDBAnimation type="zoomIn" duration="1200ms">
-            <table 
+            <div
                 className="groupContainer"
-                style={dropping ? {transform : "scale(1.15)", backgroundColor: "#d7edff"} : {}} 
-                onDragOver={(e) => { e.preventDefault()}}
-                onDragLeave={()=>{toggleDropping(false)}}
-                onDragEnter={()=>{toggleDropping(true)}}
+                style={dropping ? { transform: "scale(1.15)", backgroundColor: "#d7edff" } : {}}
+                onDragOver={(e) => { e.preventDefault() }}
+                onDragLeave={() => { toggleDropping(false) }}
+                onDragEnter={() => { toggleDropping(true) }}
                 onDrop={dropComplete}
             >
+
+                {renderCells()}
                 {
-                    last? (
+                    last ? (
                         <MDBIcon icon="times-circle" className="removeGroupIcon" onClick={() => { remove(); }} />
                     ) : null
                 }
-                <tr>
-                    <td>
-                        <div className="groupCell"></div>
-                    </td>
-                    <td>
-                        <div className="groupCell"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div className="groupCell"></div>
-                    </td>
-                    <td>
-                        <div className="groupCell"></div>
-                    </td>
-                </tr>
-            </table>
+                {
+                    documents.length > 0 ? (
+                        <MDBIcon icon="trash-alt" className="clearGroup" title="remove all documents" onClick={() => { setDocuments([]) }} />
+                    ) : null
+                }
+            </div>
         </MDBAnimation>
     )
 }
