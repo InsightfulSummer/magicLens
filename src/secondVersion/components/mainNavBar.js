@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {
-    MDBNavbar, MDBNavbarBrand, MDBIcon
+    MDBNavbar, MDBNavbarBrand, MDBIcon, MDBNavbarNav, MDBNavItem
 } from "mdbreact";
 
 const MainNavBar = () => {
@@ -10,7 +10,7 @@ const MainNavBar = () => {
     return (
         <MDBNavbar color="indigo" dark expand="md">
             <MDBNavbarBrand>
-                <MDBIcon icon="cog" />
+                InsightLab
             </MDBNavbarBrand>
         </MDBNavbar>
     )

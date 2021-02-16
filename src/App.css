@@ -369,3 +369,65 @@ p.paperAbstract {
   bottom: -15px;
   left: -15px;
 }
+
+.customOptionsContainer {
+  width: 360px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, .92);
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: none;
+  transition: 0.2s display ease-in;
+  border-radius: 8px;
+}
+
+.menu-options {
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.menu-option {
+  font-weight: 500;
+  z-index: 1;
+  font-size: 14px;
+  padding: 10px 40px 10px 20px;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  background-color:rgba(0,0,0,.2);
+}
+
+.splitIconContainer {
+  width: 50px;
+    position: fixed;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    aspect-ratio: 1/1.1;
+    transition: all 500ms;
+    border: solid 1.5px #3f51b5;
+    background: #3f51b5;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.splitIconContainer:hover {
+  right: 0px;
+  width: 60px;
+  font-size: 25px;
+}
+
+.SplitPane {
+  position: unset !important;
+  overflow: unset !important;
+}

@@ -1,14 +1,19 @@
 import React from 'react'
-// import DocPage from './pages/docPage'
-// import DocList from './pages/docList'
-// import TriageDocPage from './triage/triageDocPage'
-// import PaperList from './pages/paperList'
 import MainPage from './secondVersion/screens/mainPage'
 import "./App.css";
 
+// redux imports 
+import rootReducer from './secondVersion/redux/reducers/rootReducer'
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+const store = createStore(rootReducer)
+
+
 const App = () => {
   return (
-    <MainPage />
+    <Provider store={store}>
+      <MainPage />
+    </Provider>
   )
 }
 
