@@ -1,4 +1,5 @@
 export default {
     OPEN_CUSTOM_MENU : "OPEN_CUSTOM_MENU",
     CLOSE_CUSTOM_MENU : "CLOSE_CUSTOM_MENU",
+    SET_PANE : "SET_PANE"
 }

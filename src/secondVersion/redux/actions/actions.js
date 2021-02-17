@@ -17,3 +17,12 @@ export const closeCustomMenu = () => {
         type : types.CLOSE_CUSTOM_MENU
     }
 }
+
+export const setPane = (num) => {
+    return {
+        type : types.SET_PANE,
+        payload : {
+            numberOfPanes : num
+        }
+    }
+}
